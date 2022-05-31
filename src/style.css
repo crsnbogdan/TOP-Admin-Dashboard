@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+main,
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(100px, 3fr) 15fr;
+}
+
+
+/*sidebar*/
+
+.sidebar__dashboard {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px;
+}
+
+.dashboard__img {
+    grid-column: 2 / 5;
+}
+
+.dashboard__heading {
+    grid-column: 5 / -2;
+}
+
+body>main>div.sidebar.bg-blue-500>ul.sidebar-nav.second.list-none.grid.gap-1.items-center.justify-center.-ml-6>li:nth-child(1)>a>img {
+    width: 2.3rem!important;
+}
+
+
+/* main area*/
+
+.toparea__top,
+.toparea__bottom {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.top__userimg {
+    border-width: 3px;
+}
+
+.toparea__left {
+    grid-column: 1 / 6;
+}
+
+.toparea__left input[type="text"] {
+    width: 90%;
+}
+
+.toparea__right {
+    grid-column: 7 / -1;
+}
+
+.toparea__bottom>.bottom__left {
+    grid-column: 1 / 4;
+}
+
+.toparea__bottom>.bottom__right {
+    display: flex;
+    grid-column: 7 / -2;
+}
+
+.toparea__bottom>.bottom__left .bottom__userimg {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-width: 3px;
+}
+
+.toparea__bottom>.bottom__left p {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+
+/*mainarea bottom*/
+
+.mainarea_bottomarea {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.bottomarea__main {
+    grid-column: 1 / 8;
+}
+
+.bottomarea__sidebar {
+    grid-column: 10 / -1;
+}
+
+.main__projects {
+    grid-template-columns: repeat(2, 400px);
+    grid-auto-columns: repeat(2, 400px);
+    gap: 2rem;
+}
+
+.project__container>div::before {
+    content: '';
+    position: absolute;
+    background-color: #f6735c;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    margin-left: -17px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+
+/*mainarea sidebar*/
+
+.announcement>p::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(211, 216, 223);
+    width: 108%;
+    height: 1px;
+    top: 110%;
+    left: 5px;
+    margin-left: -17px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bundle.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="sidebar bg-violet-500">
+            <div class="sidebar__dashboard grid gap-1 items-center justify-center mb-10">
+                <img src="dashboard.svg" alt="" class="dashboard__img invert h-12 w-12">
+                <h2 class="dashboard__heading text-white text-2xl">Dashboard</h2>
+            </div>
+            <ul class="sidebar-nav first list-none grid gap-1 items-center justify-center mb-10">
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="home.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Home</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="profile.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Profile</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="messages.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Messages</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="history.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">History</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="communities.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Communities</p>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="sidebar-nav second list-none grid gap-1 items-center justify-center -ml-6">
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="settings.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Settings</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="support.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Support</p>
+                    </a>
+                </li>
+                <li class="nav-row my-2">
+                    <a href="#" class="flex flex-row">
+                        <img src="privacy.svg" alt="" class="dashboard__img invert h-6 w-6 -ml-20">
+                        <p class="text-white text-l ml-3">Privacy</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mainarea bg-slate-200">
+            <div class="mainarea__toparea drop-shadow-lg">
+                <div class="toparea__top bg-white p-2 place-content-center h-18 box-content">
+                    <div class="toparea__left grid content-center">
+                        <form action="" class="flex items-center justify-center">
+                            <button type="submit"><img src="search.svg" class="h-8 m-4" alt=""></button>
+                            <input type="text" class="h-10 rounded-full bg-slate-200">
+                        </form>
+                    </div>
+                    <div class="toparea__right relative justify-center items-center flex">
+                        <button class="toparea__notifications mr-10"><img src="notificationIcon.svg" class="h-10  w-10" alt=""></button>
+                        <img src="./logo.svg" alt="" class="top__userimg h-8 border-black p-2 box-content self-center rounded-full">
+                        <p class="toparea_username text-black ml-2 text-2xl whitespace-nowrap">Morgan Oakley</p>
+                    </div>
+                </div>
+                <div class="toparea__bottom grid bg-white pb-4">
+                    <div class="bottom__left inline-grid grid-cols-2 grid-rows-2">
+                        <img src="./logo.svg" alt="" class="bottom__userimg h-12 border-black p-2 box-content rounded-full mr-8 justify-self-end self-center">
+                        <p class="bottom_greet text-l self-end">Hi there,</p>
+                        <h1 class="bottom_username text-2xl font-semibold">Morgan Oakley</h1>
+                    </div>
+                    <div class="bottom__right box-border py-6">
+                        <button class="bottom__btn box-content  px-6 py-2 mx-4 bg-violet-500 rounded-full text-white font-semibold uppercase hover:bg-violet-700 active:bg-violet-400 duration-150 active:translate-y-1 active:drop-shadow-md">New</button>
+                        <button class="bottom__btn box-content  px-6 mx-4 bg-violet-500 rounded-full text-white font-semibold uppercase hover:bg-violet-700 active:bg-violet-400 duration-150 active:translate-y-1 active:drop-shadow-md">Upload</button>
+                        <button class="bottom__btn box-content  px-6 mx-4 bg-violet-500 rounded-full text-white font-semibold uppercase hover:bg-violet-700 active:bg-violet-400 duration-150 active:translate-y-1 active:drop-shadow-md">Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mainarea_bottomarea grid m-5">
+                <div class="bottomarea__main text-lg">
+                    <h3 class="mb-2">Your Projects</h3>
+                    <div class="main__projects grid relative">
+                        <div class="project__container bg-white p-4 pt-6 rounded-md relative shadow-md">
+                            <div ">
+                                <h4 class="font-semibold ">Cool Project</h4>
+                                <p class="text-sm text-slate-500 my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet mollitia dignissimos nostrum optio assumenda.</p>
+                                <div class="project__btns inline float-right ">
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="favorite.svg " alt=" " class="h-6 "></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="visiblility.svg " alt=" " class="h-6 "></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="share.svg " alt=" " class="h-6 "></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__container bg-white p-4 pt-6 rounded-md relative shadow-md ">
+                            <div ">
+                                <h4 class="font-semibold ">Interesting Idea</h4>
+                                <p class="text-sm text-slate-500 my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet mollitia!</p>
+                                <div class="project__btns inline float-right ">
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg"><a href="# "><img src="favorite.svg" alt=" " class="h-6"></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg"><a href="# "><img src="visiblility.svg" alt=" " class="h-6 "></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg"><a href="# "><img src="share.svg" alt=" " class="h-6 "></a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__container bg-white p-4 pt-6 rounded-md relative shadow-md">
+                            <div ">
+                                <h4 class="font-semibold ">Troublesome App</h4>
+                                <p class="text-sm text-slate-500 my-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quaerat facere nobis? Amet facere consectetur debitis excepturi quisquam veritatis officiis ducimus culpa asperiores quo? Illo voluptate repudiandae atque?</p>
+                                <div class="project__btns inline float-right ">
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="favorite.svg " alt=" " class="h-6 "></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="visiblility.svg " alt=" " class="h-6 "></a></button>
+                                    <button class="opacity-40 bg-white p-1 rounded-full active:drop-shadow-lg "><a href="# "><img src="share.svg " alt=" " class="h-6 "></a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bottomarea__sidebar ">
+                    <div class="sidebar__section ">
+                        <h4 class="text-lg ">Announcements</h4>
+                        <div class="section__announcements bg-white box-border p-3 mt-3 shadow-md rounded-md ">
+                            <div class="announcement underlined mb-5 ">
+                                <h5 class="text-lg ">Site Maintenance</h5>
+                                <p class="text-slate-500 font-sm relative ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus placeat et atque!</p>
+                            </div>
+                            <div class="announcement underlined mb-5 ">
+                                <h5 class="text-lg ">New Features</h5>
+                                <p class="text-slate-500 relative font-sm ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam iure adipisci laboriosam doloribus quibusdam sequi voluptate non quod iusto id!</p>
+                            </div>
+                            <div class="announcement mb-5 ">
+                                <h5 class="text-lg ">Updated Privacy Policy</h5>
+                                <p class="text-slate-500 font-sm ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam iure adipisci laboriosam doloribus quibusdam sequi voluptate non quod iusto id!</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
